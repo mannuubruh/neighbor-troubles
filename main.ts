@@ -11,7 +11,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile17`, function (sprite, 
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile49`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile43`, function (sprite, location) {
-    tiles.setCurrentTilemap(tilemap`level3`)
+    tiles.setCurrentTilemap(tilemap`Outside`)
     tiles.placeOnRandomTile(mySprite, sprites.dungeon.floorLight4)
     scene.setBackgroundImage(img`
         7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
@@ -155,6 +155,12 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile52`, function (sprite, 
     game.showLongText("Claire: Yes ma'am.", DialogLayout.Bottom)
     game.showLongText("Claire: Sorry ma'am.", DialogLayout.Bottom)
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile56`, function (sprite, location) {
+    game.showLongText("Claire: My mom warns me not to go in there.", DialogLayout.Bottom)
+    game.showLongText("Claire: She tells me I might get lost.", DialogLayout.Bottom)
+    game.showLongText("Claire: Maybe someday i'll head in there.", DialogLayout.Bottom)
+    tiles.setCurrentTilemap(tilemap`Outside after optional dialog`)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile48`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`Claires room no mom`)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile16`)
@@ -194,13 +200,13 @@ mySprite = sprites.create(img`
     . . . f e 4 5 5 5 5 4 e f . . . 
     . . f b 3 e 4 4 4 4 e 3 b f . . 
     . . f 3 3 3 3 3 3 3 3 3 3 f . . 
-    . f 3 3 e b 3 e e 3 b e 3 3 f . 
-    . f 3 3 f f e e e e f f 3 3 f . 
-    . f b b f b f e e f b f b b f . 
-    . f b b e 1 f 4 4 f 1 e b b f . 
-    f f b b f 4 4 4 4 4 4 f b b f f 
-    f b b f f f e e e e f f f b b f 
-    . f e e f b d d d d b f e e f . 
+    . . f 3 e b 3 e e 3 b e 3 f . . 
+    . . f 3 f f e e e e f f 3 f . . 
+    . . f b f b f e e f b f b f . . 
+    . . f b e 1 f 4 4 f 1 e b f . . 
+    . . f b f 4 4 4 4 4 4 f b f . . 
+    . . f f f f e e e e f f f f . . 
+    . . e e f b d d d d b f e e . . 
     . . e 4 c d d d d d d c 4 e . . 
     . . e f b d b d b d b b f e . . 
     . . . f f 1 d 1 d 1 d f f . . . 
