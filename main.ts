@@ -252,6 +252,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile75`, function (sprite, 
     scene.cameraFollowSprite(mySprite)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile105`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`Forest that doesnt actually have any other paths2`)
     game.showLongText("Claire: HEY PLAYER!!", DialogLayout.Bottom)
     game.showLongText("Claire: YEAH, YOU!", DialogLayout.Bottom)
     game.showLongText("Claire: Maybe try following the very obvious foot tracks like we have been?", DialogLayout.Bottom)
