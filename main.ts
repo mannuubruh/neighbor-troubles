@@ -284,6 +284,10 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile109`, function (sprite,
     tiles.setCurrentTilemap(tilemap`Forest stuff`)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile106`)
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile103`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`Jasons castle opening`)
+    tiles.placeOnRandomTile(mySprite, assets.tile`myTile117`)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile78`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`Kitchen after touching grass`)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile86`)
