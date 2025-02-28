@@ -2,7 +2,8 @@
     "name": "Neighbor troubles",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "pxt-lanterns": "github:WoofWoofCodes/lanterns#v1.1.0"
     },
     "files": [
         "main.blocks",

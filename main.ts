@@ -21,6 +21,17 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile72`, function (sprite, 
     game.showLongText("Jason: C'mon! I promise I won't get handsy~", DialogLayout.Bottom)
     game.showLongText("Claire: NO! STAY AWAY FROM ME WEIRDO! IM OUTTA HEAR!", DialogLayout.Bottom)
 })
+controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    multilights.removeFlashlightSource(mySprite)
+    multilights.addFlashLightSource(
+    mySprite,
+    270,
+    40,
+    100,
+    0,
+    1.2
+    )
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile94`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`Outside find who took mom`)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile95`)
@@ -35,6 +46,13 @@ scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles6, function (s
     tiles.setCurrentTilemap(tilemap`Forest that doesnt actually have any other paths`)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile106`)
     scene.cameraFollowSprite(mySprite)
+    multilights.toggleLighting(true)
+    multilights.addLightSource(
+    mySprite,
+    4,
+    1,
+    2.5
+    )
     game.showLongText("Claire: Mom was right, it is spooky here.", DialogLayout.Bottom)
     music.play(music.createSoundEffect(WaveShape.Sine, 3907, 3822, 255, 0, 2000, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.InBackground)
     game.showLongText("You hear the ear piercing sound of a microphone being set up.", DialogLayout.Bottom)
@@ -53,6 +71,17 @@ scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles6, function (s
     music.play(music.createSoundEffect(WaveShape.Sine, 3907, 3822, 255, 0, 2000, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.InBackground)
     game.showLongText("You hear that dreaded microphone again.", DialogLayout.Bottom)
     game.showLongText("Claire: sigh...lets get this over with.", DialogLayout.Bottom)
+})
+controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
+    multilights.removeFlashlightSource(mySprite)
+    multilights.addFlashLightSource(
+    mySprite,
+    180,
+    40,
+    100,
+    0,
+    1.2
+    )
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile42`, function (sprite, location) {
     game.showLongText("You eat the breakfast your mother claimed she had made.", DialogLayout.Bottom)
@@ -92,6 +121,17 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile90`, function (sprite, 
     game.showLongText("CLaire: I need to follow these foot track.", DialogLayout.Bottom)
     game.showLongText("CLaire: It's the only chance I have to find my Mom.", DialogLayout.Bottom)
 })
+controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
+    multilights.removeFlashlightSource(mySprite)
+    multilights.addFlashLightSource(
+    mySprite,
+    0,
+    40,
+    100,
+    0,
+    1.2
+    )
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile17`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`Kitchen after touching grass`)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile49`)
@@ -116,6 +156,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile111`, function (sprite,
     game.showLongText("Claire: ow...my head.", DialogLayout.Bottom)
     game.showLongText("Claire: w-where am I!?", DialogLayout.Bottom)
     game.showLongText("Claire: Its so dark in here.", DialogLayout.Bottom)
+    multilights.toggleLighting(false)
     tiles.setCurrentTilemap(tilemap`Dungeon level dark`)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile118`)
     scene.cameraFollowSprite(mySprite)
@@ -272,6 +313,17 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile52`, function (sprite, 
     game.showLongText("Mom: Go outside.", DialogLayout.Bottom)
     game.showLongText("Claire: Yes ma'am.", DialogLayout.Bottom)
     game.showLongText("Claire: Sorry ma'am.", DialogLayout.Bottom)
+})
+controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
+    multilights.removeFlashlightSource(mySprite)
+    multilights.addFlashLightSource(
+    mySprite,
+    90,
+    40,
+    100,
+    0,
+    1.2
+    )
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile75`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`stinky john is gone`)
