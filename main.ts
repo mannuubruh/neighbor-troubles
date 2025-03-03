@@ -46,13 +46,6 @@ scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles6, function (s
     tiles.setCurrentTilemap(tilemap`Forest that doesnt actually have any other paths`)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile106`)
     scene.cameraFollowSprite(mySprite)
-    multilights.toggleLighting(true)
-    multilights.addLightSource(
-    mySprite,
-    4,
-    1,
-    2.5
-    )
     game.showLongText("Claire: Mom was right, it is spooky here.", DialogLayout.Bottom)
     music.play(music.createSoundEffect(WaveShape.Sine, 3907, 3822, 255, 0, 2000, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.InBackground)
     game.showLongText("You hear the ear piercing sound of a microphone being set up.", DialogLayout.Bottom)
@@ -71,6 +64,16 @@ scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles6, function (s
     music.play(music.createSoundEffect(WaveShape.Sine, 3907, 3822, 255, 0, 2000, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.InBackground)
     game.showLongText("You hear that dreaded microphone again.", DialogLayout.Bottom)
     game.showLongText("Claire: sigh...lets get this over with.", DialogLayout.Bottom)
+    multilights.toggleLighting(true)
+    multilights.addLightSource(
+    mySprite,
+    4,
+    1,
+    2.5
+    )
+    game.showLongText("Claire: Hey!", DialogLayout.Bottom)
+    game.showLongText("Claire: who turned the lights off!?", DialogLayout.Bottom)
+    game.showLongText("Claire: sigh...looks like I'll have to use this flashlight that I conveniently had on me for some reason.", DialogLayout.Bottom)
 })
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     multilights.removeFlashlightSource(mySprite)
