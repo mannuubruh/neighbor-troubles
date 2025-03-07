@@ -18,6 +18,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile127`, function (sprite,
     tiles.setCurrentTilemap(tilemap`Dungeon4`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile130`, function (sprite, location) {
+    info.stopCountdown()
     scene.setBackgroundImage(img`
         ................................................................................................................................................................
         ................................................................................................................................................................
@@ -146,7 +147,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile130`, function (sprite,
     game.showLongText("Additional Pixelart By ManningX2", DialogLayout.Center)
     game.showLongText("Additional Tiles By ManningX2", DialogLayout.Center)
     game.showLongText("Quite litrally everything not provided by MakeCode By ManningX2 Duh!", DialogLayout.Center)
-    game.showLongText("THE END", DialogLayout.Center)
+    game.showLongText("GAME OVER", DialogLayout.Center)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile72`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`Jason room 3`)
@@ -240,6 +241,14 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile39`, function (sprite, 
     game.showLongText("Stinky john: If 'ya lookin' for my son, he's upstairs in his room!", DialogLayout.Bottom)
     game.showLongText("Claire: Thanks...", DialogLayout.Bottom)
     game.showLongText("Stinky john: HAHAHA! No problemo Kid!", DialogLayout.Bottom)
+})
+info.onCountdownEnd(function () {
+    game.showLongText("The Neighbors Kid", DialogLayout.Center)
+    game.showLongText("By ManningX2", DialogLayout.Center)
+    game.showLongText("Additional Pixelart By ManningX2", DialogLayout.Center)
+    game.showLongText("Additional Tiles By ManningX2", DialogLayout.Center)
+    game.showLongText("Quite litrally everything not provided by MakeCode By ManningX2 Duh!", DialogLayout.Center)
+    game.showLongText("GAME OVER", DialogLayout.Center)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile90`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`Kitchen after Mom gets got`)
@@ -510,6 +519,10 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile109`, function (sprite,
     tiles.setCurrentTilemap(tilemap`Forest stuff`)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile106`)
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile134`, function (sprite, location) {
+    multilights.toggleLighting(false)
+    tiles.placeOnRandomTile(mySprite, sprites.dungeon.floorDark3)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile103`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`Jasons castle opening`)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile117`)
@@ -576,7 +589,6 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleInsignia, func
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile132`)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.floorDark3, function (sprite, location) {
-    multilights.toggleLighting(false)
     tiles.setCurrentTilemap(tilemap`kaboom`)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile131`)
     game.showLongText("Somehow the lights mysteriously turn on.", DialogLayout.Top)
@@ -594,11 +606,11 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.floorDark3, function (spr
     game.showLongText("Jason: Well, if that is the case.", DialogLayout.Top)
     game.showLongText("Jason: Computer, start self destruct sequence.", DialogLayout.Top)
     game.showLongText("Claire: Wait...WHAT!!!", DialogLayout.Top)
-    game.showLongText("Jason: this dungeon will explode in two minutes.", DialogLayout.Top)
+    game.showLongText("Jason: this dungeon will explode in one.", DialogLayout.Top)
     game.showLongText("Claire: WHY!?", DialogLayout.Top)
     game.showLongText("Jason: If I cant have you.", DialogLayout.Top)
     game.showLongText("Jason: NO ONE WILL.", DialogLayout.Top)
-    multilights.toggleLighting(false)
+    info.startCountdown(95)
 })
 let mySprite: Sprite = null
 game.splash("Hello?")
