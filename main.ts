@@ -181,7 +181,6 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile135`, function (sprite,
     game.showLongText("Dad: Walking to work.", DialogLayout.Bottom)
     game.showLongText("...", DialogLayout.Bottom)
     game.showLongText("Claire: I'll leave you to it.", DialogLayout.Bottom)
-    tiles.setCurrentTilemap(tilemap`Outside after optional dialog`)
     tiles.placeOnRandomTile(mySprite, sprites.dungeon.floorLight4)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile13`, function (sprite, location) {
@@ -649,7 +648,7 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.floorDark3, function (spr
     game.showLongText("Jason: Well, if that is the case.", DialogLayout.Top)
     game.showLongText("Jason: Computer, start self destruct sequence.", DialogLayout.Top)
     game.showLongText("Claire: Wait...WHAT!!!", DialogLayout.Top)
-    game.showLongText("Jason: this dungeon will explode in one.", DialogLayout.Top)
+    game.showLongText("Jason: this dungeon will explode in one minute.", DialogLayout.Top)
     game.showLongText("Claire: WHY!?", DialogLayout.Top)
     game.showLongText("Jason: If I cant have you.", DialogLayout.Top)
     game.showLongText("Jason: NO ONE WILL.", DialogLayout.Top)
