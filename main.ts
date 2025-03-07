@@ -147,7 +147,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile130`, function (sprite,
     game.showLongText("Additional Pixelart By ManningX2", DialogLayout.Center)
     game.showLongText("Additional Tiles By ManningX2", DialogLayout.Center)
     game.showLongText("Quite litrally everything not provided by MakeCode By ManningX2 Duh!", DialogLayout.Center)
-    game.showLongText("GAME OVER", DialogLayout.Center)
+    game.showLongText("THE END", DialogLayout.Center)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile72`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`Jason room 3`)
@@ -268,12 +268,12 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile39`, function (sprite, 
     game.showLongText("Stinky john: HAHAHA! No problemo Kid!", DialogLayout.Bottom)
 })
 info.onCountdownEnd(function () {
+    game.showLongText("GAME OVER", DialogLayout.Center)
     game.showLongText("The Neighbors Kid", DialogLayout.Center)
     game.showLongText("By ManningX2", DialogLayout.Center)
     game.showLongText("Additional Pixelart By ManningX2", DialogLayout.Center)
     game.showLongText("Additional Tiles By ManningX2", DialogLayout.Center)
     game.showLongText("Quite litrally everything not provided by MakeCode By ManningX2 Duh!", DialogLayout.Center)
-    game.showLongText("GAME OVER", DialogLayout.Center)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile90`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`Kitchen after Mom gets got`)
