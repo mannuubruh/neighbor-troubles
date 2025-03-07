@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.61/---simulator","cdnUrl":"https://cdn.makecode.com","version":"2.2.0","target":"arcade","targetVersion":"1.12.61","repo":"mannuubruh/neighbor-troubles"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.61/---simulator","cdnUrl":"https://cdn.makecode.com","version":"2.2.1","target":"arcade","targetVersion":"1.12.61","repo":"mannuubruh/neighbor-troubles"}
 // total=2509690 new=25.68% cached=70.23% other=4.09%
 (function (ectx) {
 'use strict';
@@ -585,7 +585,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P74902(s) {
+function _main___P75220(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2050,13 +2050,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P74902.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/pxt-lanterns/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P74902.continuations = [  ]
+_main___P75220.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/pxt-lanterns/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P75220.continuations = [  ]
 
-function _main___P74902_mk(s) {
+function _main___P75220_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P74902, depth: s.depth + 1,
+        parent: s, fn: _main___P75220, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -73468,5 +73468,5 @@ const sprites_BaseSpriteSayRenderer__C35329_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["transparency16___72966","tile1___72971","tile2___72976","tile4___72981","tile5___72986","tile6___72991","tile7___72996","tile8___73001","tile9___73006","tile10___73011","tile11___73061","tile12___73016","tile13___73021","tile14___73026","tile3___73031","tile15___73036","tile16___73046","tile42___73176","tile43___73181","tile45___73186","tile46___73191","tile47___73196","tile48___73281","tile49___73201","tile50___73206","tile52___73221","tile51___73216","tile55___73236","tile44___73211","tile53___73226","tile54___73231","tile59___73261","tile60___73266","tile61___73271","tile62___73276","tile64___73286","tile65___73256","tile66___73291","tile63___73296","tile67___73301","tile68___73306","tile69___73311","tile71___73316","tile70___73321","tile72___73326","tile73___73351","tile75___73331","tile76___73336","tile79___73386","tile81___73346","tile77___73356","tile82___73361","tile83___73366","tile86___73376","tile87___73381","tile74___73391","tile20___73066","tile21___73071","tile22___73076","tile25___73091","tile26___73096","tile27___73101","tile28___73106","tile29___73111","tile31___73121","tile34___73131","tile35___73136","tile33___73141","tile38___73146","tile36___73156","tile39___73161","tile40___73166","tile56___73241","tile57___73246","tile58___73251","tile80___73396","tile85___73401","tile89___73411","tile90___73416","tile91___73421","tile88___73406","tile93___73431","tile94___73436","tile95___73441","tile96___73446","tile18___73051","tile92___73426","tile102___73476","tile97___73451","tile98___73456","tile99___73461","tile100___73466","tile101___73471","tile103___73486","tile104___73491","tile106___73496","tile108___73506","tile109___73481","tile110___73511","tile111___73516","tile78___73341","tile112___73526","tile113___73531","tile114___73536","tile115___73541","tile116___73546","tile119___73561","tile120___73566","tile121___73571","tile122___73576","tile123___73581","tile125___73586","tile126___73591","tile127___73596","tile128___73601","tile129___73611","tile124___73606","tile131___73621","tile132___73626","tile133___73631","tile130___73616","tile135___73641","tile134___73636","tile136___73646","tile17___73041","tile138___73651","tile32___73126","tile41___73171","tile137___73656","tile107___73501","tile139___73661","tile140___73666","tile105___73521","tile141___73671","tile117___73551","tile118___73556","tile143___73676","tile142___73681","tile19___73056","tile23___73081","tile24___73086","tile30___73116","tile37___73151","tile84___73371","mySprite___64096"])
 
-return _main___P74902
+return _main___P75220
 })
