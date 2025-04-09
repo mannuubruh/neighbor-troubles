@@ -296,6 +296,10 @@ namespace myTiles {
     export const tile146 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile147 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile148 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile149 = image.ofBuffer(hex``);
 
     helpers._registerFactory("tilemap", function(name: string) {
         switch(helpers.stringTrim(name)) {
@@ -409,22 +413,6 @@ namespace myTiles {
 2 . . . . . . . . . . . . . . 2 
 . 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . 
 `, [myTiles.transparency16,myTiles.tile6,myTiles.tile42,myTiles.tile43,myTiles.tile46,myTiles.tile47,myTiles.tile48,myTiles.tile49,myTiles.tile52,myTiles.tile51,sprites.builtin.brick,myTiles.tile89,myTiles.tile90,myTiles.tile91,myTiles.tile93,myTiles.tile94,myTiles.tile95,myTiles.tile96], TileScale.Sixteen);
-            case "Outside find who took mom":
-            case "Outside run away1":return tiles.createTilemap(hex`1a000d000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000141414141415070809161414141414150708091614141414141410110f110f100a0c0d0f0f10110f0f100a0c0d0f10101110110f11100f100f120b190e131017141810120b1a0e130f111011100f030303030303031f1f1f1f1f1f1f1f1f1f1c030303030303030302020202020202020202020202020202021d020202020202020201010101010101010101010101010101011e010101010101010102020202020202020202020202020202021d020202020202020203030303030303030303030303201f1f1f1f0303030303030303050505050505050505050505061b040505050505050505050505`, img`
-22222222222222222222222222
-22222222222222222222222222
-22222222222222222222222222
-22222222222222222222222222
-22222222222222222222222222
-222...222.......222...2222
-222...222..222..222...2222
-222...................2222
-222...................2222
-222...................2222
-222...................2222
-222...................2222
-2222222222222.222222222222
-`, [myTiles.transparency16,myTiles.tile20,myTiles.tile21,myTiles.tile22,sprites.builtin.forestTiles1,sprites.builtin.forestTiles2,sprites.builtin.forestTiles3,myTiles.tile25,myTiles.tile26,myTiles.tile27,myTiles.tile28,myTiles.tile29,myTiles.tile31,myTiles.tile34,myTiles.tile35,sprites.castle.tileGrass2,sprites.castle.tileGrass1,sprites.castle.tileGrass3,myTiles.tile33,myTiles.tile38,myTiles.tile36,myTiles.tile39,myTiles.tile40,myTiles.tile56,myTiles.tile57,myTiles.tile64,myTiles.tile80,sprites.builtin.forestTiles6,myTiles.tile97,myTiles.tile98,myTiles.tile99,myTiles.tile100,myTiles.tile101], TileScale.Sixteen);
             case "Forest that doesnt actually have any other paths2":
             case "Forest that doesnt actually have any other paths2":return tiles.createTilemap(hex`110010000303040303030202060202030303040304030403040304020107010203040403030304030403040302010701020303030404030304030403030201070102030403040303040303030403020107010204030403040303030403040402010701020303030303030304030303020101070101020304030403030303020201010101080801020203030303040201010101010101010801010203040403020101010501010105010701020304030302010101050101010501070102030404040201010105010101050107010204030304020101010501010105010701020303040302010101050101010501070102030403030201010105010101050107010203040304020101010501010105090909020404`, img`
 . . . . . . 2 2 . 2 2 . . . . . . 
@@ -1524,6 +1512,38 @@ namespace myTiles {
 2 . . . . . . . . . . . 2 
 2 2 2 2 2 2 2 2 2 2 2 2 2 
 `, [myTiles.transparency16,myTiles.tile1,myTiles.tile2,myTiles.tile4,myTiles.tile5,myTiles.tile6,sprites.dungeon.darkGroundNorthWest0,sprites.dungeon.darkGroundCenter,sprites.dungeon.darkGroundNorth,sprites.dungeon.darkGroundEast,sprites.dungeon.darkGroundSouthEast0,sprites.dungeon.darkGroundSouth,sprites.dungeon.darkGroundSouthWest0,sprites.dungeon.darkGroundWest,sprites.vehicle.roadHorizontal,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10,myTiles.tile11,myTiles.tile12,myTiles.tile13,myTiles.tile14,myTiles.tile3,myTiles.tile15,myTiles.tile17,myTiles.tile138,myTiles.tile144], TileScale.Sixteen);
+            case "Outside find who took mom":
+            case "Outside run away1":return tiles.createTilemap(hex`1a000d000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000141414141415070809161414141414150708091614141414141410110f110f100a0c0d0f0f10110f0f100a0c0d0f10101110110f11100f100f120b190e131017141810120b1a0e130f111011100f030303030303031f1f1f1f1f1f1f1f1f211c030303030303030302020202020202020202020202020202021d020202020202020201010101010101010101010101010101011e010101010101010102020202020202020202020202020202021d020202020202020203030303030303030303030303201f1f1f1f0303030303030303050505050505050505050505061b040505050505050505050505`, img`
+22222222222222222222222222
+22222222222222222222222222
+22222222222222222222222222
+22222222222222222222222222
+22222222222222222222222222
+222...222.......222...2222
+222...222..222..222...2222
+222...................2222
+222...................2222
+222...................2222
+222...................2222
+222...................2222
+22222222222222222222222222
+`, [myTiles.transparency16,myTiles.tile20,myTiles.tile21,myTiles.tile22,sprites.builtin.forestTiles1,sprites.builtin.forestTiles2,sprites.builtin.forestTiles3,myTiles.tile25,myTiles.tile26,myTiles.tile27,myTiles.tile28,myTiles.tile29,myTiles.tile31,myTiles.tile34,myTiles.tile35,sprites.castle.tileGrass2,sprites.castle.tileGrass1,sprites.castle.tileGrass3,myTiles.tile33,myTiles.tile38,myTiles.tile36,myTiles.tile39,myTiles.tile40,myTiles.tile56,myTiles.tile57,myTiles.tile64,myTiles.tile80,sprites.builtin.forestTiles6,myTiles.tile97,myTiles.tile98,myTiles.tile99,myTiles.tile100,myTiles.tile148,myTiles.tile149], TileScale.Sixteen);
+            case "Outside find who took mom0":
+            case "level11":return tiles.createTilemap(hex`1a000d000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000141414141415070809161414141414150708091614141414141410110f110f100a0c0d0f0f10110f0f100a0c0d0f10101110110f11100f100f120b190e131017141810120b1a0e130f111011100f030303030303031f1f1f1f1f1f1f1f1f211c030303030303030302020202020202020202020202020202021d020202020202020201010101010101010101010101010101011e010101010101010102020202020202020202020202020202021d020202020202020203030303030303030303030303201f1f1f1f0303030303030303050505050505050505050505061b040505050505050505050505`, img`
+22222222222222222222222222
+22222222222222222222222222
+22222222222222222222222222
+22222222222222222222222222
+22222222222222222222222222
+222...222.......222...2222
+222...222..222..222...2222
+222...................2222
+222...................2222
+222...................2222
+222...................2222
+222...................2222
+22222222222222222222222222
+`, [myTiles.transparency16,myTiles.tile20,myTiles.tile21,myTiles.tile22,sprites.builtin.forestTiles1,sprites.builtin.forestTiles2,sprites.builtin.forestTiles3,myTiles.tile25,myTiles.tile26,myTiles.tile27,myTiles.tile28,myTiles.tile29,myTiles.tile31,myTiles.tile34,myTiles.tile35,sprites.castle.tileGrass2,sprites.castle.tileGrass1,sprites.castle.tileGrass3,myTiles.tile33,myTiles.tile38,myTiles.tile36,myTiles.tile39,myTiles.tile40,myTiles.tile56,myTiles.tile57,myTiles.tile64,myTiles.tile80,sprites.builtin.forestTiles6,myTiles.tile97,myTiles.tile98,myTiles.tile99,myTiles.tile100,myTiles.tile148,myTiles.tile149], TileScale.Sixteen);
         }
         return null;
     })
@@ -1825,6 +1845,10 @@ namespace myTiles {
             case "tile146":return tile146;
             case "Marco":
             case "tile147":return tile147;
+            case "myTile145":
+            case "tile148":return tile148;
+            case "myTile146":
+            case "tile149":return tile149;
         }
         return null;
     })

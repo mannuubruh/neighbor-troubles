@@ -159,9 +159,12 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile72`, function (sprite, 
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile94`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`Outside find who took mom`)
-    tiles.placeOnRandomTile(mySprite, assets.tile`myTile95`)
+    tiles.placeOnRandomTile(mySprite, assets.tile`myTile146`)
     scene.cameraFollowSprite(mySprite)
     game.showLongText("Claire: Look! more foot tracks!", DialogLayout.Bottom)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile145`, function (sprite, location) {
+    game.showLongText("Claire: Excuse me! I need to go through!", DialogLayout.Bottom)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile135`, function (sprite, location) {
     game.showLongText("Claire: Oh! Hey dad!", DialogLayout.Bottom)
