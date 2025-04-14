@@ -680,6 +680,8 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleInsignia, func
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile132`)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.floorDark3, function (sprite, location) {
+    multilights.toggleLighting(false)
+    Is_light_on = 0
     tiles.setCurrentTilemap(tilemap`kaboom`)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile131`)
     game.showLongText("Somehow the lights mysteriously turn on.", DialogLayout.Top)
