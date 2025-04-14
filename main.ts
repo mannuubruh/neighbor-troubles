@@ -1,5 +1,5 @@
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile161`, function (sprite, location) {
-	
+    circleLight += 1
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile0`, function (sprite, location) {
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile0`)
@@ -214,7 +214,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile13`, function (sprite, 
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile136`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile163`, function (sprite, location) {
-	
+    circleLight += 1
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile120`, function (sprite, location) {
     game.showLongText("you flip the switch", DialogLayout.Bottom)
@@ -634,7 +634,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile78`, function (sprite, 
     game.showLongText("Claire: I should go to bed", DialogLayout.Bottom)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile162`, function (sprite, location) {
-	
+    circleLight += 1
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile64`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`Outside run away`)
