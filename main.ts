@@ -193,9 +193,12 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile159`, function (sprite,
     game.showLongText("You gave the mysterious girl seven dollars", DialogLayout.Top)
     game.showLongText("Mysterious Girl: OH YEAH! NOW I CAN BUY SEVEN PACKS OF GUM AND SELL IT FOR MORE THAN THE ORIGINAL PRICE!", DialogLayout.Top)
     game.showLongText("Mysterious Girl: Here, you are going to need this flashlight.", DialogLayout.Top)
-    game.showLongText("You took that flashlight from the Mysterious Girl", DialogLayout.Top)
+    game.showLongText("You took the flashlight from the Mysterious Girl", DialogLayout.Top)
     game.showLongText("Claire: What if the battery dies?", DialogLayout.Top)
     game.showLongText("Mysterious Girl: Don't worry! you will find them scattered throughout the forest.", DialogLayout.Top)
+    game.showLongText("Mysterious Girl: Also, when text is on screen the flashlight will glitch.", DialogLayout.Top)
+    game.showLongText("Mysterious Girl: whatever that means.", DialogLayout.Top)
+    game.showLongText("Claire: uh...ok?", DialogLayout.Top)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile135`, function (sprite, location) {
     game.showLongText("Claire: Oh! Hey dad!", DialogLayout.Bottom)
