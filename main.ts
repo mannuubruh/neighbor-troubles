@@ -1,3 +1,6 @@
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile161`, function (sprite, location) {
+	
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile0`, function (sprite, location) {
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile0`)
     game.showLongText("Claire: sigh...finally", DialogLayout.Bottom)
@@ -12,6 +15,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile0`, function (sprite, l
     game.showLongText("Claire: Mom?", DialogLayout.Bottom)
     game.showLongText("...", DialogLayout.Bottom)
     game.showLongText("CLaire: I should go check on mom!", DialogLayout.Bottom)
+    tiles.setCurrentTilemap(tilemap`Claires room no mom0`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile127`, function (sprite, location) {
     game.showLongText("you flip the switch", DialogLayout.Bottom)
@@ -159,12 +163,39 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile72`, function (sprite, 
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile94`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`Outside find who took mom`)
-    tiles.placeOnRandomTile(mySprite, assets.tile`myTile146`)
+    tiles.placeOnRandomTile(mySprite, assets.tile`myTile95`)
     scene.cameraFollowSprite(mySprite)
     game.showLongText("Claire: Look! more foot tracks!", DialogLayout.Bottom)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile145`, function (sprite, location) {
     game.showLongText("Claire: Excuse me! I need to go through!", DialogLayout.Bottom)
+    game.showLongText("Mysterious Girl: In the name of master Jason,", DialogLayout.Bottom)
+    game.showLongText("Mysterious Girl: I may not let you pass.", DialogLayout.Bottom)
+    game.showLongText("Claire: Bu-", DialogLayout.Bottom)
+    game.showLongText("Mysterious Girl: YOU SHALL NOT PASS!!!", DialogLayout.Bottom)
+    game.showLongText("...", DialogLayout.Bottom)
+    game.showLongText("Claire: Was that a lord of the-", DialogLayout.Bottom)
+    game.showLongText("Mysterious Girl: It was a lord of the ring reference.", DialogLayout.Bottom)
+    game.showLongText("...", DialogLayout.Bottom)
+    game.showLongText("Claire: so like...", DialogLayout.Bottom)
+    game.showLongText("Claire: Can I bribe you with my allowance?", DialogLayout.Bottom)
+    game.showLongText("Mysterious Girl: how much Is your allowance?", DialogLayout.Bottom)
+    game.showLongText("Claire: Seven bucks.", DialogLayout.Bottom)
+    game.showLongText("Mysterious Girl: DEAL!", DialogLayout.Bottom)
+    game.showLongText("Mysterious Girl: I'll be waiting", DialogLayout.Bottom)
+    tiles.setCurrentTilemap(tilemap`Outside find who took mom0`)
+    tiles.placeOnRandomTile(mySprite, assets.tile`myTile150`)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile159`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`Outside find who took mom4`)
+    tiles.placeOnRandomTile(mySprite, assets.tile`myTile160`)
+    game.showLongText("Claire: Here ya go!", DialogLayout.Top)
+    game.showLongText("You gave the mysterious girl seven dollars", DialogLayout.Top)
+    game.showLongText("Mysterious Girl: OH YEAH! NOW I CAN BUY SEVEN PACKS OF GUM AND SELL IT FOR MORE THAN THE ORIGINAL PRICE!", DialogLayout.Top)
+    game.showLongText("Mysterious Girl: Here, you are going to need this flashlight.", DialogLayout.Top)
+    game.showLongText("You took that flashlight from the Mysterious Girl", DialogLayout.Top)
+    game.showLongText("Claire: What if the battery dies?", DialogLayout.Top)
+    game.showLongText("Mysterious Girl: Don't worry! you will find them scattered throughout the forest.", DialogLayout.Top)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile135`, function (sprite, location) {
     game.showLongText("Claire: Oh! Hey dad!", DialogLayout.Bottom)
@@ -182,16 +213,17 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile13`, function (sprite, 
     game.showLongText("Turtle: No one will believe you", DialogLayout.Top)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile136`)
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile163`, function (sprite, location) {
+	
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile120`, function (sprite, location) {
     game.showLongText("you flip the switch", DialogLayout.Bottom)
     tiles.setCurrentTilemap(tilemap`Dungeon9`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile143`, function (sprite, location) {
     game.showLongText("Claire: What are you doing behind this bush?", DialogLayout.Bottom)
-    game.showLongText("Stranger: I'm trying to see what's in that forest.", DialogLayout.Bottom)
-    game.showLongText("Stranger: I've heard so many rumors about that forest to the point where I must know what is really going on in there.", DialogLayout.Bottom)
-    game.showLongText("Stranger: say, How about you take a look?", DialogLayout.Bottom)
-    game.showLongText("Claire: Just a peak.", DialogLayout.Bottom)
+    game.showLongText("Mysterious Girl: Im making sure no one goes through that forest.", DialogLayout.Bottom)
+    game.showLongText("Mysterious Girl: Go away now.", DialogLayout.Bottom)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile144`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile141`, function (sprite, location) {
@@ -203,10 +235,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile141`, function (sprite,
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile140`)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles6, function (sprite, location) {
-    game.showLongText("Claire: Oh no!", DialogLayout.Top)
-    game.showLongText("Claire: These are the forbidden woods!", DialogLayout.Top)
-    game.showLongText("Claire: My Mom warned not to go in there!", DialogLayout.Top)
-    game.showLongText("Claire: But if she's lost in there then I have no choice.", DialogLayout.Top)
+    game.showLongText("Claire: Here goes nothing!", DialogLayout.Top)
     tiles.setCurrentTilemap(tilemap`Forest that doesnt actually have any other paths`)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile106`)
     scene.cameraFollowSprite(mySprite)
@@ -249,6 +278,23 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile42`, function (sprite, 
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile124`, function (sprite, location) {
     game.showLongText("you flip the switch", DialogLayout.Bottom)
     tiles.setCurrentTilemap(tilemap`Dungeon3`)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile147`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`kitchen money`)
+    tiles.placeOnRandomTile(mySprite, assets.tile`myTile155`)
+    scene.cameraFollowSprite(mySprite)
+    game.showLongText("Claire: My allowance should be in my room somewhere.", DialogLayout.Bottom)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile149`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`Claires room money`)
+    tiles.placeOnRandomTile(mySprite, assets.tile`myTile16`)
+    scene.cameraFollowSprite(mySprite)
+    game.showLongText("Claire: Found it!", DialogLayout.Bottom)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile154`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`kitchen money2`)
+    tiles.placeOnRandomTile(mySprite, assets.tile`myTile152`)
+    scene.cameraFollowSprite(mySprite)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile39`, function (sprite, location) {
     scene.setBackgroundImage(assets.image`Night time`)
@@ -299,6 +345,11 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile17`, function (sprite, 
     tiles.setCurrentTilemap(tilemap`Kitchen after touching grass`)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile49`)
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile158`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`Outside find who took mom2`)
+    tiles.placeOnRandomTile(mySprite, assets.tile`myTile157`)
+    scene.cameraFollowSprite(mySprite)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile111`, function (sprite, location) {
     scene.setBackgroundImage(assets.image`Night time`)
     music.play(music.createSoundEffect(WaveShape.Square, 673, 345, 220, 0, 100, SoundExpressionEffect.Vibrato, InterpolationCurve.Linear), music.PlaybackMode.InBackground)
@@ -319,7 +370,6 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile111`, function (sprite,
     game.showLongText("Claire: ow...my head.", DialogLayout.Bottom)
     game.showLongText("Claire: w-where am I!?", DialogLayout.Bottom)
     game.showLongText("Claire: Its so dark in here.", DialogLayout.Bottom)
-    game.showLongText("Claire: Good thing that I just so happen to conveniently keep this flashlight in my pocket", DialogLayout.Bottom)
     multilights.toggleLighting(true)
     multilights.addLightSource(
     mySprite,
@@ -327,7 +377,6 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile111`, function (sprite,
     1,
     2.5
     )
-    tiles.setCurrentTilemap(tilemap`Dungeon2`)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile118`)
     scene.cameraFollowSprite(mySprite)
 })
@@ -484,6 +533,12 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile52`, function (sprite, 
     game.showLongText("Claire: Yes ma'am.", DialogLayout.Bottom)
     game.showLongText("Claire: Sorry ma'am.", DialogLayout.Bottom)
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile151`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`Claires room money0`)
+    tiles.placeOnRandomTile(mySprite, assets.tile`myTile152`)
+    scene.cameraFollowSprite(mySprite)
+    game.showLongText("You collected seven dollars from the bag.", DialogLayout.Bottom)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile122`, function (sprite, location) {
     game.showLongText("you flip the switch", DialogLayout.Bottom)
     tiles.setCurrentTilemap(tilemap`level`)
@@ -504,7 +559,10 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`Marco`, function (sprite, loc
     game.showLongText("Claire: Oh my god!", DialogLayout.Top)
     game.showLongText("Claire: Is that Marco from the 1985 classic", DialogLayout.Top)
     game.showLongText("Claire: Ordinary Marco cousins!?", DialogLayout.Top)
-    game.showLongText("Jump Man: get out.", DialogLayout.Top)
+    game.showLongText("Marco: It's-eh I! Marco!", DialogLayout.Top)
+    game.showLongText("Claire: What are you doing in the walls?", DialogLayout.Top)
+    game.showLongText("...", DialogLayout.Top)
+    game.showLongText("Marco: GET OUT.", DialogLayout.Top)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile136`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile61`, function (sprite, location) {
@@ -575,6 +633,9 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile78`, function (sprite, 
     scene.cameraFollowSprite(mySprite)
     game.showLongText("Claire: I should go to bed", DialogLayout.Bottom)
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile162`, function (sprite, location) {
+	
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile64`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`Outside run away`)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile83`)
@@ -592,6 +653,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile56`, function (sprite, 
     game.showLongText("Claire: She tells me I might get lost.", DialogLayout.Bottom)
     game.showLongText("Claire: Maybe someday i'll head in there.", DialogLayout.Bottom)
     tiles.setCurrentTilemap(tilemap`Outside after optional dialog`)
+    tiles.placeOnRandomTile(mySprite, assets.tile`myTile148`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile48`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`Claires room no mom`)
